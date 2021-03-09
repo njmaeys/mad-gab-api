@@ -1,0 +1,9 @@
+# python things
+__pycache__/
+*.pyc
+
+# virtualenv
+.venv
+
+# mac things
+.DS_Store
