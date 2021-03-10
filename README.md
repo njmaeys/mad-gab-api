@@ -12,7 +12,7 @@ $ docker push njmaeys/mad-gab-api:<build version>
 ### Run it
 ```console
 $ docker pull njmaeys/mad-gab-api:<build version>
-$ docker run -p 5000:80 njmaeys/mad-gab-api:<build version>
+$ docker run -d -p 5000:80 njmaeys/mad-gab-api:<build version>
 ```
 
 # Requests
