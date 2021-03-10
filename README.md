@@ -44,7 +44,7 @@ Response example
 }
 ```
 ---
-Get one mad gab
+Get one mad gab  
 **/onegabs**
 
 ```console
