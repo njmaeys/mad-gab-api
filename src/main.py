@@ -23,8 +23,7 @@ def get_one_gab_endpoint():
     "gab_index": 0
   }
   '''
-  gab_index = request.json["gab_index"]
-  return get_one_gab(gab_index)
+  return get_one_gab()
 
 
 if __name__ == '__main__':
