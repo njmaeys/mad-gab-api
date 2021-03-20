@@ -45,10 +45,10 @@ Response example
 ```
 ---
 Get one mad gab  
-**/onegabs**
+**/onegab**
 
 ```console
-$ curl -X GET https://gabs.pandablade.com/onegabs
+$ curl -X GET https://gabs.pandablade.com/onegab
 ```
 
 Response example
