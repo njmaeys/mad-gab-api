@@ -1,0 +1,6 @@
+replicaCount: 1
+
+image:
+  registry: njmaeys
+  repository: mad-gab-api
+  tag: 0.0.3

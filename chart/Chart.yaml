@@ -1,0 +1,12 @@
+apiVersion: v1
+name: mad-gab-api
+version: 0.0.1
+appVersion: 0.0.3
+home: https://github.com/njmaeys/mad-gab-api
+description: Chart for Mad Gab API.
+keywords:
+- mad-gab
+sources:
+- https://github.com/njmaeys/mad-gab-api
+maintainers:
+- name: njmaeys

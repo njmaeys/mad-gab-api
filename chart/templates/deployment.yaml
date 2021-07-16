@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ template "fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ template "fullname" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ template "fullname" . }}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: {{ template "fullname" . }}
+    spec:
+      containers:
+      - name: {{ template "fullname" . }}
+        imagePullPolicy: Always
+        image: "{{ .Values.image.registry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        ports:
+        resources:
+          limits:
+            cpu: 10m
+            memory: 128Mi
+          requests:
+            cpu: 10m
+            memory: 128Mi
