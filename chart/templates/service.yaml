@@ -9,5 +9,7 @@ spec:
   selector:
     app.kubernetes.io/name: {{ template "fullname" . }}
   ports:
-  - name: {{ template "fullname" . }}
-    port: 5000
+  - protocol: TCP
+    port: {{ .Values.ports.appPort }}
+    targetPort: {{ .Values.ports.appPort }}
+    nodePort: {{ .Values.ports.nodePort }}

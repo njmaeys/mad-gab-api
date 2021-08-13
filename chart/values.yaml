@@ -4,3 +4,9 @@ image:
   registry: njmaeys
   repository: mad-gab-api
   tag: 0.0.3
+
+host: gabs.pandablade.com
+
+ports:
+  appPort: 5000
+  nodePort: 30007

@@ -18,7 +18,6 @@ spec:
       - name: {{ template "fullname" . }}
         imagePullPolicy: Always
         image: "{{ .Values.image.registry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-        ports:
         resources:
           limits:
             cpu: 10m
